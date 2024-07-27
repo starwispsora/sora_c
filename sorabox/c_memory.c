@@ -1,8 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 struct list {
-  int *data; // Points to the memory where the list items are stored
-  int numItems; // Indicates how many items are currently in the list
-  int size; // Indicates how many items fit in the allocated memory
+    int *data; // Points to the memory where the list items are stored
+    int numItems; // Indicates how many items are currently in the list
+    int size; // Indicates how many items fit in the allocated memory
 };
+
 
 void addToList(struct list *myList, int item);
 
@@ -52,3 +56,7 @@ void addToList(struct list *myList, int item) {
   myList->data[myList->numItems] = item;
   myList->numItems++;
 }
+
+/*Pointers to structures: This example has a pointer to the structure myList. 
+Because we are using a pointer to the structure instead of the structure itself, 
+we use the arrow syntax (->) to access the structure's members.*/

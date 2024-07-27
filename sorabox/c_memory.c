@@ -53,10 +53,4 @@ void addToList(struct list *myList, int item) {
   }
 
   // Add the item to the end of the list
-  myList->data[myList->numItems] = item;
-  myList->numItems++;
-}
-
-/*Pointers to structures: This example has a pointer to the structure myList. 
-Because we are using a pointer to the structure instead of the structure itself, 
-we use the arrow syntax (->) to access the structure's members.*/
+  myList->data[my
